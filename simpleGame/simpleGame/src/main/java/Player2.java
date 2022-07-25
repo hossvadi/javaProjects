@@ -32,12 +32,12 @@ public class Player2 extends Player1 {
             this.health -= 40;
             if(this.health <=0) this.health =0;
             System.out.println("Armour is on, Got hit by Gun 1. the health reduced by 40. " +
-                    "Current health is" + this.health);
+                    "Current health is " + this.health + ".");
         } if (!armour) {
             this.health -= 50;
             if(this.health <=0) this.health =0;
-            System.out.println("Armour is off, Got hit by Gun 1. the health reduced by 50." +
-                    "Current health is" + this.health);
+            System.out.println("Armour is off, Got hit by Gun 1. the health reduced by 50. " +
+                    "Current health is " + this.health + ".");
         }
         if (this.health == 0) {
             System.out.println(getName() + " is dead!");
@@ -46,6 +46,10 @@ public class Player2 extends Player1 {
 
     @Override
     public void heal() {
-        super.heal();
+        if (this.health <= 0) System.out.println("Player is dead! Heal not possible");
+        else {
+            this.health = 100;
+            System.out.println(getName() + "'s health is raised to: " + this.health);
+        }
     }
 }

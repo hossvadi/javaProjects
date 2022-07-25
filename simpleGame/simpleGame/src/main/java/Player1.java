@@ -38,12 +38,11 @@ public class Player1 {
     }
 
     public void heal() {
-        if (this.health <= 0) System.out.println(getName() + " is dead! Heal not possible");
+        if (this.health <= 0) System.out.println("Player is dead! Heal not possible");
         else {
             this.health = 100;
-            System.out.println(getName() + "'s health is: " + this.health);
+            System.out.println(getName() + "'s health is raised to: " + this.health);
         }
-
     }
 
     public String getName() {
