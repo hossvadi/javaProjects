@@ -20,7 +20,7 @@ public class Account {
 
     public void withdrawMoney(double withdrawalMoney) {
         if (this.balance - withdrawalMoney < 0) {
-            System.out.println("Withdrawal unsuccessful, only " + this.balance + "is left for you! Please increase the fund.");
+            System.out.println("Withdrawal unsuccessful, only " + this.balance + " is left for you! Please increase the fund.");
         } else {
             this.balance -= withdrawalMoney;
             System.out.println("Withdrawal successful. Current balance is: " + this.balance);
