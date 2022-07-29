@@ -8,8 +8,21 @@ public class Stock {
         capital += s * p;
     }
     public void sell (double p, int s) {
-        shares += s;
+        shares -= s;
         price = p;
-        capital += s * p;
+        capital -= s * p;
     }
+
+    public int getShares() {
+        return shares;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public double getAveragePrice() {
+        return capital / getShares();
+    }
+
 }
