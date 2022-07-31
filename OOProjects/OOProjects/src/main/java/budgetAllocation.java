@@ -1,7 +1,7 @@
 import java.util.ArrayList;
-import java.util.Scanner;
+        import java.util.Scanner;
 
-public class Driver {
+public class budgetAllocation {
     public static void main(String[] args) {
         System.out.println("How much can you spend? ");
         Scanner scan = new Scanner(System.in);
