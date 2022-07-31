@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
-import java.util.Scanner;
+        import java.util.Scanner;
 
-public class Driver {
+public class investmentEarnings {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your buying price per share: ");
@@ -13,13 +13,13 @@ public class Driver {
 
         while (true) {
             System.out.println("Enter the closing price for day "
-                + day + " (any negative value to leave) : ");
+                    + day + " (any negative value to leave) : ");
             closingPrice = scanner.nextDouble();
             if (closingPrice <  0.0) break;
             double earnings = closingPrice - buyingPrice;
             if (earnings > 0) {
                 System.out.println("After day " + day + ", you earned "
-                    + df.format(earnings) + " per share. ");
+                        + df.format(earnings) + " per share. ");
             }
             else if (earnings < 0.0) {
                 System.out.println("After day " + day + ", you lost -"
