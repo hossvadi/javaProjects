@@ -7,9 +7,9 @@ public class Student {
 
 
     public Student(String n) {
-        name = n;
-        subject = new ArrayList<>();
-        grade = new ArrayList<>();
+        this.name = n;
+        this.subject = new ArrayList<>();
+        this.grade = new ArrayList<>();
     }
 
     public String getName() {
