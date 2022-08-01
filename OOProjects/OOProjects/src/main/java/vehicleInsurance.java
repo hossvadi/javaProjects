@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class vehicleInsurance {
@@ -6,10 +7,11 @@ public class vehicleInsurance {
         System.out.println("Car, truck, Bus, Motorcycle");
         Scanner scan = new Scanner(System.in);
         String type = scan.nextLine();
+        String scanString = String.valueOf(type).toLowerCase(Locale.ROOT);
 
         int premium = 0;
 
-        switch (type) {
+        switch (scanString) {
             case "car":
                 premium = 200;
                 break;
