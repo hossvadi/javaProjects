@@ -6,14 +6,14 @@ public class rosterTable {
 
         // Arraylist of  ArrayLists
 
-        ArrayList<ArrayList<String>> roster = new ArrayList<ArrayList<String>>(days);
+        ArrayList<ArrayList<String>> roster = new ArrayList<>(days);
 
         //each sub-ArrayList
-        ArrayList<String> day1 = new ArrayList<String>();
-        ArrayList<String> day2 = new ArrayList<String>();
-        ArrayList<String> day3 = new ArrayList<String>();
+        ArrayList<String> day1 = new ArrayList<>();
+        ArrayList<String> day2 = new ArrayList<>();
+        ArrayList<String> day3 = new ArrayList<>();
         day1.add("Hossein");
-        day1.add("Javadi");
+        day1.add("Javad");
         roster.add(day1);
         day2.add("Reza");
         day2.add("Mohammad");
@@ -23,10 +23,18 @@ public class rosterTable {
         day3.add("Taghi");
         roster.add(day3);
 
-        System.out.println(roster);
+        getDays(roster, "Hossein");
+        getDays(roster, "Javad");
+
     }
 
     public static void getDays(ArrayList<ArrayList<String>> rosterTable, String name) {
-        for (ArrayList<String> arrList : )
+        for (ArrayList<String> arrList : rosterTable) {
+            for (String str : arrList) {
+                if (str.contentEquals(name)) {
+                    System.out.println(rosterTable.indexOf(arrList) + 1);
+                }
+            }
+        }
     }
 }
