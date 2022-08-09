@@ -9,7 +9,7 @@ public class lotteryNumber {
         // all elements are initialized to be zeros
         int[] lotteryArray = new int[slots];
         boolean isRepeated;
-        int randomNumber = 0;
+        int randomNumber;
 
         for (int indexDrawn = 0; indexDrawn < slots; indexDrawn++) {
             do {
