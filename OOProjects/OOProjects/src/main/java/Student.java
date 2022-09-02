@@ -17,8 +17,8 @@ public class Student {
     }
 
     public void add(String s, Character g) {
-       subject.add(s);
-       grade.add(g);
+        subject.add(s);
+        grade.add(g);
     }
 
     public ArrayList<String> getSubjects() {
