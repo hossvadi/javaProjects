@@ -11,14 +11,14 @@ public class compareStudentMark {
         hadi.addMarks("History", 91);
         
         if (hadi.compareTo(hossein) > 0) {
-            System.out.println(hadi.getName() + "gets a higher total mark");
+            System.out.println(hadi.getName() + " gets a higher total mark");
         }
         
         else if (hadi.compareTo(hossein) < 0) {
-            System.out.println(hossein.getName() + "gets a higher total mark");
+            System.out.println(hossein.getName() + " gets a higher total mark");
         }
         else {
-            System.out.println("Both student get the same total mark");
+            System.out.println(" Both student get the same total mark");
         }
     }
 }
